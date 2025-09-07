@@ -1,0 +1,13 @@
+@url=http://localhost:3003
+
+### Crear tarea
+POST {{url}}/tareas
+Content-Type: application/json
+
+{ "nombre": "Estudiar para el 1er Parcial", "completada": false }
+
+### Listar
+GET {{url}}/tareas
+
+### Filtrar 
+GET {{url}}/tareas?estado=pendientes
